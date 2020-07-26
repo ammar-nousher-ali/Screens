@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@android:color/white"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_new_order"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/darkerGray"
+                    android:text="New Orders"
+                    android:textSize="18sp"
+                    app:cornerRadius="60dp"></com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_recieve"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/darkerGray"
+                    android:text="Recieving"
+                    android:textSize="18sp"
+                    app:cornerRadius="60dp"></com.google.android.material.button.MaterialButton>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/txt_track_order_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Track Your Order"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+
+                            android:id="@+id/edt_track_order1"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_edt_txt"
+                            android:hint="Write your tracking number"
+                            android:padding="10dp"
+                            android:textSize="15sp"></EditText>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_delivered"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/darkerGray"
+                    android:text="Delivered"
+                    android:textSize="18sp"
+                    app:cornerRadius="60dp"></com.google.android.material.button.MaterialButton>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Track Your Order"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"></TextView>
+
+                        <EditText
+                            android:id="@+id/edt_track_order2"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rounded_edt_txt"
+                            android:hint="Write your tracking number"
+                            android:padding="10dp"
+                            android:textSize="15sp"></EditText>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/card_view"
+            android:layout_gravity="center_horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_go_online"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/space"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="-30dp"
+            android:backgroundTint="@color/colorApp"
+            android:padding="5dp"
+            android:text="Go Online"
+            app:cornerRadius="60dp"
+
+            ></com.google.android.material.button.MaterialButton>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/space"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_txt">
+
+
+            <TextView
+
+                android:id="@+id/txt_offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:text="You're Offline"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
